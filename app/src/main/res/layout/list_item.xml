@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:background="@color/grey" >
+
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="120dp"
+        android:layout_height="250dp"
+        android:src="@drawable/poster"
+        />
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/imgPoster"
+       android:layout_marginLeft="0dp">
+
+       <TextView
+           android:id="@+id/txtTitle"
+           android:layout_width="match_parent"
+           android:paddingTop="10dp"
+           android:layout_height="wrap_content"
+           android:textSize="16dp"
+           />
+
+       <RatingBar
+           style="?android:attr/ratingBarStyleIndicator"
+           android:id="@+id/listRating"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/imgPoster"
+           android:layout_alignTop="@id/txtTitle"
+           android:layout_marginTop="5dp"
+           android:isIndicator="true"
+           android:numStars="5"
+           android:stepSize="0.5"
+           />
+
+   </LinearLayout>
+
+</RelativeLayout>
