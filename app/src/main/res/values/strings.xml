@@ -14,4 +14,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
+    <string name="title_activity_movie_details">MovieDetails</string>
+    <string name="title_activity_full_plot">FullPlot</string>
+    <string name="title_activity_hold_party">HoldParty</string>
 </resources>

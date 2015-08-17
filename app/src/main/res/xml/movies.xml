@@ -5,7 +5,8 @@
         genre="Action, Adventure, Sci-Fi" director="George Miller"
         writer="George Miller, Brendan McCarthy, Nick Lathouris"
         actors="Tom Hardy, Charlize Theron, Nicholas Hoult, Hugh Keays-Byrne"
-        shotplot="An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and almost everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order. There's Max, a man of action and a man of few words, who seeks peace of mind following the loss of his wife and child in the aftermath of the chaos. And Furiosa, a woman of action and a woman who believes her path to survival may be achieved if she can make it across the desert back to her childhood homeland."
+        shotplot="In a stark desert landscape where humanity is broken, two rebels just might be able to restore order: Max, a man of action and of few words, and Furiosa, a woman of action who is looking to make it back to her childhood homeland."
+        fullplot="An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and almost everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order. There's Max, a man of action and a man of few words, who seeks peace of mind following the loss of his wife and child in the aftermath of the chaos. And Furiosa, a woman of action and a woman who believes her path to survival may be achieved if she can make it across the desert back to her childhood homeland."
         poster="http://ia.media-imdb.com/images/M/MV5BMTUyMTE0ODcxNF5BMl5BanBnXkFtZTgwODE4NDQzNTE@._V1_SX300.jpg"
         rating="5" />
 
@@ -15,13 +16,15 @@
         writer="Guy Ritchie (screenplay), Lionel Wigram (screenplay), Jeff Kleeman (story), David C. Wilson (story), Guy Ritchie (story), Lionel Wigram (story), Sam Rolfe (based on the television series by)"
         actors="Alicia Vikander, Henry Cavill, Armie Hammer, Hugh Grant"
         shotplot="In the early 1960s, CIA agent Napoleon Solo and KGB operative Illya Kuryakin participate in a joint mission against a mysterious criminal organization, which is working to proliferate nuclear weapons."
+        fullplot="2015 has been a great year for espionage films. From the beginning of the year, there was Kingsmen: Secret Service. Just this past summer, there was Spy followed by Mission:Impossible - Rogue Nation. All of these were very successful, both commercially and critically. And now, another spy film is gunning to join that illustrious list. The Man from U.N.C.L.E. was originally a TV series from the mid-1960s developed by Sam Rolfe. It starred Robert Vaughn (as American agent Napoleon Solo) and David McCallum (as Russian agent Illya Kuryakin). U.N.C.L.E. was an acronym for the United Network Command for Law and Enforcement, a secret international counter-espionage organization, aiming to maintain worldwide political and legal order. This series lasted for four years from 1964 to 68, becoming a cultural icon of sorts at that time with its audacious theme of US-Russian cooperation at the height of the Cold War."
         poster="http://ia.media-imdb.com/images/M/MV5BMTc2NjQ4ODYyNF5BMl5BanBnXkFtZTgwODA3OTU5NTE@._V1_SX300.jpg"
         rating="0" />
     <movie id="3" title="The Shawshank Redemption"
         year="1994" rated="R" released="14 Oct 1994" runtime="142 min"
         genre="Crime, Drama" director="Frank Darabont" writer="Stephen King (short story &quot;Rita Hayworth and Shawshank Redemption&quot;),Frank Darabont (screenplay)"
         actors="Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler"
-        shotplot="Andy Dufresne is a young and successful banker whose life changes drastically when he is convicted and sentenced to life imprisonment for the murder of his wife and her lover. Set in the 1940s, the film shows how Andy, with the help of his friend Red, the prison entrepreneur, turns out to be a most unconventional prisoner."
+        shotplot="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+        fullplot="Andy Dufresne is a young and successful banker whose life changes drastically when he is convicted and sentenced to life imprisonment for the murder of his wife and her lover. Set in the 1940s, the film shows how Andy, with the help of his friend Red, the prison entrepreneur, turns out to be a most unconventional prisoner."
         poster="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg"
         rating="4"/>
 
@@ -31,6 +34,7 @@
         writer="James Johnson"
         actors="Kelly Jackson, Samuel Dent Chapman, Christopher Bird, Ian Richardson"
         shotplot="When Seth Posner suffers a brain injury at work he is left in a vegetative state, existing in the world of his memories, dreams and imagination. His wife, Sarah, and best friend Jordan's ..."
+        fullplot="Anna, a fearless optimist, sets off on an epic journey - teaming up with rugged mountain man Kristoff and his loyal reindeer Sven - to find her sister Elsa, whose icy powers have trapped the kingdom of Arendelle in eternal winter. Encountering Everest-like conditions, mystical trolls and a hilarious snowman named Olaf, Anna and Kristoff battle the elements in a race to save the kingdom. From the outside Anna's sister, Elsa looks poised, regal and reserved, but in reality, she lives in fear as she wrestles with a mighty secret-she was born with the power to create ice and snow. It's a beautiful ability, but also extremely dangerous. Haunted by the moment her magic nearly killed her younger sister Anna, Elsa has isolated herself, spending every waking minute trying to suppress her growing powers. Her mounting emotions trigger the magic, accidentally setting off an eternal winter that she can't stop. She fears she's becoming a monster and that no one, not even her sister, can help her. "
         poster="http://ia.media-imdb.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg"
         rating="4.5" />
 
@@ -39,6 +43,7 @@
         genre="Animation, Comedy, Family" director="Pierre Coffin, Chris Renaud" writer="Cinco Paul, Ken Daurio"
         actors="Steve Carell, Kristen Wiig, Benjamin Bratt, Miranda Cosgrove"
         shotplot="When Gru, the world's most super-bad turned super-dad has been recruited by a team of officials to stop lethal muscle and a host of Gru's own, He has to fight back with new gadgetry, cars, and more minion madness."
+        fullplot="While Gru, the ex-supervillain is adjusting to family life and an attempted honest living in the jam business, a secret Arctic laboratory is stolen. The Anti-Villain League decides it needs an insider's help and recruits Gru in the investigation. Together with the eccentric AVL agent, Lucy Wilde, Gru concludes that his prime suspect is the presumed dead supervillain, El Macho, whose his teenage son is also making the moves on his eldest daughter, Margo. Seemingly blinded by his overprotectiveness of his children and his growing mutual attraction to Lucy, Gru seems on the wrong track even as his minions are being quietly kidnapped en masse for some malevolent purpose."
         poster="http://ia.media-imdb.com/images/M/MV5BMjExNjAyNTcyMF5BMl5BanBnXkFtZTgwODQzMjQ3MDE@._V1_SX300.jpg"
         rating="4" />
     <movie id="6" title="Interstellar" year="2014"
@@ -46,6 +51,7 @@
         genre="Adventure, Drama, Sci-Fi" director="Christopher Nolan" writer="Jonathan Nolan, Christopher Nolan"
         actors="Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow"
         shotplot="A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+        fullplot="In the near future, Earth has been devastated by drought and famine, causing a scarcity in food and extreme changes in climate. When humanity is facing extinction, a mysterious rip in the space-time continuum is discovered, giving mankind the opportunity to widen its lifespan. A group of explorers must travel beyond our solar system in search of a planet that can sustain life. The crew of the Endurance are required to think bigger and go further than any human in history as they embark on an interstellar voyage into the unknown. Coop, the pilot of the Endurance, must decide between seeing his children again and the future of the human race. "
         poster="http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg"
         rating="0"/>
 
@@ -53,7 +59,8 @@
         rated="PG-13" released="25 Dec 2014" runtime="114 min"
         genre="Biography, Drama, Thriller" director="Morten Tyldum" writer="Graham Moore, Andrew Hodges (book)"
         actors="Benedict Cumberbatch, Keira Knightley, Matthew Goode, Rory Kinnear"
-        shotplot="Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II."
+        shotplot="During World War II, mathematician Alan Turing tries to crack the enigma code with help from fellow mathematicians."
+        fullplot="Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II."
         poster="http://ia.media-imdb.com/images/M/MV5BNDkwNTEyMzkzNl5BMl5BanBnXkFtZTgwNTAwNzk3MjE@._V1_SX300.jpg"
         rating="3"/>
 </PreferenceScreen>

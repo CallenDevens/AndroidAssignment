@@ -3,7 +3,6 @@ package com.example.aya.myapplication;
 import android.app.ListActivity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,7 +12,7 @@ import android.widget.ListView;
 import android.content.res.XmlResourceParser;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
+import android.content.Intent;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
@@ -23,22 +22,16 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.MalformedURLException;
 
 public class MainActivity extends ListActivity {
 
+    public List<Movie> movies;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final List<Movie> movies = getMovies();
-
-        /*
-        movies.add(new Movie(1, "Title1", getResources().getDrawable(R.drawable.poster), 2.5));
-        movies.add(new Movie(2, "Title2", getResources().getDrawable(R.drawable.poster), 4.5));
-        movies.add(new Movie(3, "Title3", getResources().getDrawable(R.drawable.poster), 3.4));
-*/
+        movies= getMovies();
 
         ListAdapter adapter = new MovieAdapter(movies, this);
         ListView lstView = getListView();
@@ -49,17 +42,10 @@ public class MainActivity extends ListActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Movie movie = movies.get(position);
-                final int menuIndex = movie.getId();
-                switch (menuIndex) {
-                    case 1:
-                        break;
-                    case 2:
-                        break;
-                    case 3:
-                        break;
-                    default:
-                        break;
-                }
+
+                Intent i = new Intent(MainActivity.this, MovieDetails.class);
+                i.putExtra("ID", movie.getId());
+                startActivity(i);
             }
         });
     }
@@ -120,7 +106,7 @@ public class MainActivity extends ListActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        xmlReader.close();
         return movieList;
     }
 

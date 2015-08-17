@@ -1,0 +1,208 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        tools:context="com.example.aya.myapplication.MovieDetails">
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="120dp"
+            android:layout_height="250dp"
+            android:src="@drawable/poster"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgPoster"
+            android:layout_toEndOf="@+id/imgPoster">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Title"
+                />
+
+            <TextView
+                android:id="@+id/txtGenre"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Action"
+                />
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgPoster"
+                android:layout_alignTop="@id/txtTitle"
+                android:layout_marginTop="5dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.5"
+                />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="3th Dec 2015"
+                />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="351 Swanston Street Melbourne VIC 3000"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Director"/>
+    <TextView
+        android:id="@+id/txtDirector" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Writer"/>
+
+    <TextView
+        android:id="@+id/txtWriter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Actor"/>
+    <TextView
+        android:id="@+id/txtActor"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Short Plot"/>
+    <TextView
+        android:id="@+id/txtSplot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:id="@+id/txtStory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Storyline(spoiler)"/>
+
+    <LinearLayout
+        android:id="@+id/partyInfo"
+        android:layout_weight="0"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="15dp"
+           android:textStyle="bold"
+           android:layout_marginTop="5dp"
+           android:text="Party Venue"/>
+       <TextView
+           android:id="@+id/txtVenue"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="12dp"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp" />
+
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="15dp"
+           android:textStyle="bold"
+           android:layout_marginTop="5dp"
+           android:text="Party Location"/>
+       <TextView
+           android:id="@+id/txtLocation"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="12dp"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/txtInvitee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Invitees List"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnParty"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Have a Party for the Film" />
+</LinearLayout>
+</ScrollView>
