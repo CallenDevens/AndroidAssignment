@@ -1,9 +1,11 @@
 package com.example.aya.myapplication;
-
+import java.util.Calendar;
+import java.util.Date;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.DatePicker;
 
 public class HoldParty extends AppCompatActivity {
 
@@ -11,6 +13,9 @@ public class HoldParty extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hold_party);
+
+        DatePicker dtPicker = (DatePicker) findViewById(R.id.datePicker);
+        dtPicker.setMinDate(System.currentTimeMillis()-1000);
     }
 
     @Override

@@ -90,12 +90,19 @@ public class MovieDetails extends AppCompatActivity {
         LinearLayout partyInfo = (LinearLayout) findViewById(R.id.partyInfo);
 
         Button btnParty = (Button) findViewById(R.id.btnParty);
+        btnParty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MovieDetails.this, HoldParty.class);
+                startActivity(i);
+            }
+        });
+
 
         Party party = movie.getParty();
        // Party party = new Party(new Date(2014,8,9),"22-24 Janebell Lane", (float)38.88,(float)99.99 );
 
         if(party == null){
-            //Toast.makeText(getBaseContext(),"No Party!", Toast.LENGTH_SHORT).show();
             partyInfo.setVisibility(View.GONE);
         }
         else{
@@ -107,13 +114,6 @@ public class MovieDetails extends AppCompatActivity {
             TextView txtPartyDate = (TextView) findViewById(R.id.txtDate);
             txtPartyDate.setText(party.getDate().toString());
         }
-
-        btnParty.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         RatingBar ratingb = (RatingBar)findViewById(R.id.Rating);
         ratingb.setRating((float) movie.getRating());
