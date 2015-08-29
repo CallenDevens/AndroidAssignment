@@ -2,32 +2,193 @@
 <items version="2" >
 
     <item
-        jar="/Users/aya/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/7.8.0/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-63e6a16965189b774a74696caff19bccc2d0ac92.jar" />
+        revision="23.0.0"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-0442a97a892151dfc2baf116580e4467daf87cca.jar" />
     </item>
     <item
-        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-f61ca8f9f6eaedf8b945ab5d30b229b470ce833a.jar" />
+        revision="23.0.0"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-389885974ed5d3fd401219ca245cd3a6cbc6858a.jar" />
     </item>
     <item
-        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.8.0/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-30c06668329d870efae568198acc54472972377b.jar" />
+        revision="23.0.0"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-23ee56cce63a7d7461f19ae37398752b82dca27c.jar" />
     </item>
     <item
-        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.8.0/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-d84cdc7c4f9e7c8c628db9a293d7188ffc3110d0.jar" />
+        revision="23.0.0"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-a1ef96ac1b87a3cd5d3bf899c9182b830439d9dd.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-2cb73beec19544d6a64eaae8dbea10eca84e28d5.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-bfa9173cba1dc09425ec81689c3bfb54b65cc6bd.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-df252d7539d6e7e486894c00440257ee5f7c2ff1.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-15d2df0701b3a0a885f7e7bc39d95b01a36fcd5d.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-c2cb8c866c40aa0896eb58d8b0190911fd344a08.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-fcd8275627f020d2609bf9373231d69b0a3fe3e2.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-7ebd725b227dbce0bb9ac46500bf6180ee49d3b9.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-6a4bdf6675a45bf370eaeb05dea019ffff028db8.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-dfe8c71e85d3b3d2757afad9ac41b1d8a4f91e6e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-4d6cbfe74c4c7c2a036d6b7c38113878661773a0.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-504cbf8c6911c555fca5fd2dfc4ce25c66c9b3c4.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-f2a5c5f2793c1268462ab4b8515e90bb0de45f93.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-ab34c15fcda02640342dbe82025d4837799d8d8a.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-f45a2fcc619c8a6e083e1e153af7dd97490baa04.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-e0574f3795cdd0a5df6a0020682ed2b3fdded6c1.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-d40aa8bee058348df672073c282707334dcc2d30.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-160a60ffb5e7ff67f96c42e4e86a0d0906fc3e0e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-45d9909f2954ec21533ef99d65e56afb261825fd.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-445f18b5082c628ae48dbc082ba86df9f96ce8a3.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-6dd9f7bb0d33d22943265205165b4d0871cd0fa2.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-8bed8ac90385b9ffc157b5bf639014d026ec666d.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-997b04dbf29e1674a009395cdb442afcefb82a5e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-ca7f5903b96f6379d3133629cf09e52f0767c957.jar" />
     </item>
 
 </items>
