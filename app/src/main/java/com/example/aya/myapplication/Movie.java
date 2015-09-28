@@ -1,5 +1,6 @@
 package com.example.aya.myapplication;
 
+import android.graphics.Bitmap;
 import android.widget.ImageView;
 import android.graphics.drawable.*;
 import android.os.Parcelable;
@@ -9,31 +10,29 @@ import android.os.Parcel;
  * Created by aya on 15-8-6.
  */
 public class Movie{
-    private int id;
+    private String id;
     private String title;
     private int year;
     private String shortPlot;
     private String fullPlot;
     private String genre;
-    private Drawable poster;
-    private double rating;
+    private Bitmap poster;
+    private float rating;
     private String actors;
     private String writer;
     private String director;
 
-    private Party party = null;
-
-    public Movie(int id, String title, Drawable pic, int year,double rating){
+    public Movie(String id, String title, String genre, Bitmap pic, int year,float rating){
         this.title = title;
+        this.genre = genre;
         this.id = id;
         this.poster = pic;
         this.year = year;
         this.rating = rating;
-        this.party = null;
     }
 
-    public Movie(int id, String title, String genre, Drawable pic,int year,
-                 double rating, String sPlot, String fPlot,
+    public Movie(String id, String title, String genre, Bitmap pic,int year,
+                 float rating, String sPlot, String fPlot,
                  String actors, String writer,String direcor){
         this.genre = genre;
         this.year = year;
@@ -46,18 +45,17 @@ public class Movie{
         this.director = direcor;
         this.actors = actors;
         this.writer = writer;
-        this.party = null;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public  Drawable getPicture(){
+    public  Bitmap getPicture(){
         return poster;
     }
 
-    public double getRating(){
+    public float getRating(){
         return this.rating;
     }
 
@@ -74,12 +72,7 @@ public class Movie{
 
     public String getShortPlot(){return shortPlot;}
     public String getFullPlot(){return fullPlot;}
-
-    public void setParty(Party p){
-        this.party = p;
-    }
-
-    public Party getParty(){
-        return party;
+    public void setRating(float r){
+        this.rating = r;
     }
 }

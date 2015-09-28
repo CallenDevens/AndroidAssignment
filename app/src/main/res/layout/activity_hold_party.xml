@@ -28,13 +28,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/timePicker" />
-    <EditText
-        android:text="Pick up a Venue"
-        android:textColor="@color/grey"
-        android:id="@+id/edtPickVenue"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
-
     <Button
         android:text="Add members"
         android:id="@+id/btnAddMember"
@@ -46,6 +39,12 @@
         android:id="@+id/btnHoldTheParty"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/testMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEST MAP"/>
 </LinearLayout>
 
 </ScrollView>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.aya.myapplication.PickupVenue">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" tools:context="com.example.aya.myapplication.MapFragment">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtSelectVenue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter address here"
+                android:layout_weight="100"/>
+            <Button
+                android:id="@+id/btnSearchForVenue"
+                android:text="OK"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/fragMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+    </LinearLayout>
+
+</LinearLayout>

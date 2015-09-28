@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Message;
 import android.provider.ContactsContract;
@@ -29,19 +30,21 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import android.os.Handler;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PickUpContacts extends ListActivity{
 
-    private  final int UPDATE_CONTACT = 1;
+    public  static final int UPDATE_CONTACT = 1;
     private ListView lstViewContacts;
-    ArrayList contactsList = new ArrayList();
-    ArrayList partyContactsList = new ArrayList();
+    ArrayList<String> names = new ArrayList<String>();
+    ArrayList<String> phones = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,24 +52,39 @@ public class PickUpContacts extends ListActivity{
         setContentView(R.layout.activity_pick_up_contacts);
 
         lstViewContacts = getListView();
-//      lstViewContacts.setItemsCanFocus(false);
-        lstViewContacts.setAdapter(new ContactAdapter(this));
-
+        final ContactAdapter adapter = new ContactAdapter(this);
+        lstViewContacts.setAdapter(adapter);
         lstViewContacts.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-        /*
-        Button btnDone =(Button)findViewById(R.id.btnContactsDone);
-        Button btnCancel = (Button)findViewById(R.id.btnContactBack);
 
-        btnDone.setOnClickListener(new View.OnClickListener() {
+        lstViewContacts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                view.setBackgroundColor(getResources().getColor(R.color.light_blue));
+                String name = adapter.getItem(position).getName();
+                String phone = adapter.getItem(position).getPhoneNumber();
 
+                names.add(name);
+                phones.add(phone);
+                //Toast.makeText(PickUpContacts.this, phoneList,Toast.LENGTH_SHORT).show();
+
+                Bundle b=new Bundle();
+                b.putStringArrayList("names", names);
+                b.putStringArrayList("phones", phones);
+                Intent i =new Intent();
+                i.putExtras(b);
+                setResult(UPDATE_CONTACT, i);
             }
         });
 
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        /*
+        lstViewContacts.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View arg1, int arg2, long arg3) {
+
+
+                Toast.makeText(PickUpContacts.this, "你点了第" + arg3 + "项", Toast.LENGTH_LONG).show();
+            }
+
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
@@ -82,9 +100,7 @@ public class PickUpContacts extends ListActivity{
         public ContactAdapter( Context c){
             this.context = c;
             this.setListAdapter();
-
             this.size = items.size();
-
         }
 
         private void setListAdapter() {
@@ -127,7 +143,7 @@ public class PickUpContacts extends ListActivity{
         }
 
         public long getItemId(int position){
-            return 0;
+            return position;
         }
 
         public View getView(int position, View contentView, ViewGroup parent){
@@ -143,8 +159,6 @@ public class PickUpContacts extends ListActivity{
             txtPhone.setText(contact.getPhoneNumber());
             return contactLayout;
         }
-
-
     }
 
     @Override

@@ -67,16 +67,7 @@
                 android:paddingTop="10dp"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
-                android:text="3th Dec 2015"
-                />
-
-            <TextView
-                android:id="@+id/txtAddress"
-                android:layout_width="match_parent"
-                android:paddingTop="5dp"
-                android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:text="351 Swanston Street Melbourne VIC 3000"
+                android:text=""
                 />
         </LinearLayout>
     </RelativeLayout>
@@ -151,53 +142,13 @@
         android:layout_marginBottom="5dp"
         android:text="Storyline(spoiler)"/>
 
-    <LinearLayout
-        android:id="@+id/partyInfo"
-        android:layout_weight="0"
-        android:visibility="visible"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-       <TextView
-           android:layout_width="fill_parent"
-           android:layout_height="wrap_content"
-           android:textSize="15dp"
-           android:textStyle="bold"
-           android:layout_marginTop="5dp"
-           android:text="Party Venue"/>
-       <TextView
-           android:id="@+id/txtVenue"
-           android:layout_width="fill_parent"
-           android:layout_height="wrap_content"
-           android:textSize="12dp"
-           android:layout_marginTop="3dp"
-           android:layout_marginBottom="3dp" />
+    <Button
+        android:id="@+id/btnViewParties"
+        android:textStyle="bold"
+        android:text="VIEW PARTIES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-       <TextView
-           android:layout_width="fill_parent"
-           android:layout_height="wrap_content"
-           android:textSize="15dp"
-           android:textStyle="bold"
-           android:layout_marginTop="5dp"
-           android:text="Party Location"/>
-       <TextView
-           android:id="@+id/txtLocation"
-           android:layout_width="fill_parent"
-           android:layout_height="wrap_content"
-           android:textSize="12dp"
-           android:layout_marginTop="3dp"
-           android:layout_marginBottom="3dp" />
-
-        <TextView
-            android:id="@+id/txtInvitee"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Invitees List"/>
-    </LinearLayout>
     <Button
         android:id="@+id/btnParty"
         android:layout_marginTop="10dp"

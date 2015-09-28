@@ -6,7 +6,7 @@
     android:layout_width="match_parent" >
 
     <ListView
-        android:id="@id/android:list"
+        android:id="@+id/lstMovies"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:dividerHeight="10dp"/>
