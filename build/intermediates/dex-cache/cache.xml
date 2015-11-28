@@ -2,11 +2,200 @@
 <items version="2" >
 
     <item
-        jar="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/jars/classes.jar"
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-0ad0d530b6c1c193adcdb022cbcbcb44e5bb530e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-05a5692ccd36db794a227b3b1ceec1c4362e7325.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-d72a4ecce941ddff4924418e4d5705fd4f55bc66.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-e41219f341f86603a637e05ea80d843db7108967.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-6841f132f6910772ba2bbb7a082fd7965edb448d.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-f2d385cadce08149c7bbd7f18a3d6080aec74689.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-94d1499508277eefca94d0e8a5860c076455b03b.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-eebc1e9e24abf9b94c6ce59270feb4d72e91f02b.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-5704d62a632f6556c0e02d9ebfa85045fc377439.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-cdf189922cf4be603a6392cd28e7fd21ec060d0e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-8e52085706bda5e17f8f1132f0ec2021ba4c8778.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-f2a5c5f2793c1268462ab4b8515e90bb0de45f93.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-55283cf3f8c73db866d4dad7a2480d5ee5f8be77.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-5305495996b175c1df1b57ebc61f549c51c0569f.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-186a8e88dc7269df51419a4888dee33206319bd9.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-b75866e59ec754a20f49b7fd281b392e7e335d37.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-0bc2c616920da72dbc5f26c635b50f99ea0b27fa.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-b8f0196ad068ea3dfa0ed684a72717f542a59e2e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-28af8e5ef582c7da821aad7beee0a4c617c08768.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-145a0463d9576a216da3ea5522c510ccd37ce389.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-c6cd0d48f74bae16b9ea91885d66469c9a9eba4e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-c361e70680268178abc733ca86e5801286bb99ec.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-8e34708911935953eb6e6f6cb11efdca3cf9edfd.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-719557b9b1c5188f29b22613fa2222a2ee6915ef.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-de5ae2476714bdc3041131281c62e32d8682b6b2.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-b3164bf24c15db8585212821229e63249036255e.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-ee981bee3b5bbf336b35fe97fb4d04c4b0e54dea.jar" />
+    </item>
+    <item
+        jar="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/jars/classes.jar"
         jumboMode="false"
         revision="21.0.1"
         sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
-        <dex dex="/Users/aya/AndroidStudioProjects/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-7484e2e4b824f7a5c0228fef87e66534c7f59dcc.jar" />
+        <dex dex="/Users/aya/Desktop/AndroidAssignment/app/build/intermediates/pre-dexed/debug/classes-4ea94728f5a1b468fc835a4106a176a740f98fbf.jar" />
     </item>
 
 </items>

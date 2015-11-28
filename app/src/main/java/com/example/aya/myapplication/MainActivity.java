@@ -371,12 +371,17 @@ public class MainActivity extends AppCompatActivity{
         values.put(ClubsDB.KEY_CLUB_NAME    , "QV Square");
         values.put(ClubsDB.COLUMN_LATITUDE  ,-37.81020);
         values.put(ClubsDB.COLUMN_LONGITUDE, 144.96620);
+        values.put(ClubsDB.COLUMN_RANGE, 100);
+        values.put(ClubsDB.COLUMN_JOINED, 1);
         reslover.insert(AppContentProvider.CLUB_URI, values);
+        values.clear();
 
         values.put(ClubsDB.KEY_ADDRESS, "211 La Trobe St, Melbourne VIC 3000");
-        values.put(ClubsDB.KEY_CLUB_NAME    , "Melbourne Central");
+        values.put(ClubsDB.KEY_CLUB_NAME, "Melbourne Central");
         values.put(ClubsDB.COLUMN_LATITUDE  ,-37.81092);
         values.put(ClubsDB.COLUMN_LONGITUDE, 144.96280);
+        values.put(ClubsDB.COLUMN_RANGE, 2000);
+        values.put(ClubsDB.COLUMN_JOINED, 0);
         reslover.insert(AppContentProvider.CLUB_URI, values);
         values.clear();
 
@@ -384,6 +389,8 @@ public class MainActivity extends AppCompatActivity{
         values.put(ClubsDB.KEY_CLUB_NAME, "Hoyts Melbourne Central");
         values.put(ClubsDB.COLUMN_LATITUDE, -37.80964);
         values.put(ClubsDB.COLUMN_LONGITUDE, 144.96390);
+        values.put(ClubsDB.COLUMN_RANGE, 2000);
+        values.put(ClubsDB.COLUMN_JOINED, 0);
         reslover.insert(AppContentProvider.CLUB_URI, values);
         values.clear();
 
@@ -391,28 +398,37 @@ public class MainActivity extends AppCompatActivity{
         values.put(ClubsDB.KEY_CLUB_NAME, "Rooftop Cinema");
         values.put(ClubsDB.COLUMN_LATITUDE  ,-37.81206);
         values.put(ClubsDB.COLUMN_LONGITUDE, 144.96512);
+        values.put(ClubsDB.COLUMN_RANGE, 2000);
+        values.put(ClubsDB.COLUMN_JOINED, 0);
         reslover.insert(AppContentProvider.CLUB_URI, values);
         values.clear();
 
 
         values.put(ClubsDB.KEY_ADDRESS, "45 Collins St, Melbourne VIC 3000");
-        values.put(ClubsDB.KEY_CLUB_NAME    , "Kino Cinemas");
+        values.put(ClubsDB.KEY_CLUB_NAME, "Kino Cinemas");
         values.put(ClubsDB.COLUMN_LATITUDE  ,-37.81405);
         values.put(ClubsDB.COLUMN_LONGITUDE, 144.97221);
+        values.put(ClubsDB.COLUMN_RANGE, 2000);
+        values.put(ClubsDB.COLUMN_JOINED, 0);
         reslover.insert(AppContentProvider.CLUB_URI, values);
         values.clear();
 
-        values.put(ClubsDB.KEY_ADDRESS      , "1/194-200 Bourke St, Melbourne VIC 3000");
-        values.put(ClubsDB.KEY_CLUB_NAME    , "Chinatown Cinema");
+        values.put(ClubsDB.KEY_ADDRESS, "1/194-200 Bourke St, Melbourne VIC 3000");
+        values.put(ClubsDB.KEY_CLUB_NAME, "Chinatown Cinema");
         values.put(ClubsDB.COLUMN_LATITUDE  ,-37.81244);
         values.put(ClubsDB.COLUMN_LONGITUDE ,144.96728);
+        values.put(ClubsDB.COLUMN_RANGE, 1000);
+        values.put(ClubsDB.COLUMN_JOINED, 0);
         reslover.insert(AppContentProvider.CLUB_URI, values);
         values.clear();
 
-        values.put(ClubsDB.KEY_ADDRESS      , "Rathdowne St, Carlton VIC 3053");
-        values.put(ClubsDB.KEY_CLUB_NAME    , "IMAX Melbourne Museum");
+        values.put(ClubsDB.KEY_ADDRESS, "Rathdowne St, Carlton VIC 3053");
+        values.put(ClubsDB.KEY_CLUB_NAME, "IMAX Melbourne Museum");
         values.put(ClubsDB.COLUMN_LATITUDE  , -37.79987);
         values.put(ClubsDB.COLUMN_LONGITUDE , 144.97002);
+        values.put(ClubsDB.COLUMN_RANGE, 1000);
+        values.put(ClubsDB.COLUMN_JOINED, 0);
         reslover.insert(AppContentProvider.CLUB_URI, values);
+
     }
 }

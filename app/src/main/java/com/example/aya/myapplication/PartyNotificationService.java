@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.gcm.Task;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -41,7 +42,6 @@ public class PartyNotificationService extends Service {
     double longitude;
     ArrayList<LatLng> markerPoints;
     LocationManager mLocationManager;
-    String duration = "";
     long partyDateInMillis;
     private int request_code;
     private String partyAddress;
@@ -73,7 +73,7 @@ public class PartyNotificationService extends Service {
         request_code = intent.getIntExtra("request_code", 0);
         partyAddress = intent.getStringExtra("party_address");
 
-                Log.e("TEST", "party date in millis" + partyDateInMillis);
+        Log.e("TEST", "party date in millis" + partyDateInMillis);
 
         if (markerPoints.size() > 1) {
             markerPoints.clear();
@@ -85,25 +85,12 @@ public class PartyNotificationService extends Service {
         if (markerPoints.size() >= 2) {
             LatLng origin = markerPoints.get(0);
             LatLng dest = markerPoints.get(1);
-            String url = getDirectionsUrl(origin, dest);
 
-            Log.e("TEST", "url:" + url);
-            DownloadTask downloadTask = new DownloadTask();
-            downloadTask.execute(url);
+
+            GetTimeTask getTimeTask = new GetTimeTask();
+            getTimeTask.execute(origin, dest);
         }
         return 0;
-    }
-
-    private String getDirectionsUrl(LatLng origin, LatLng dest)
-    {
-        String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
-        String str_dest = "destination=" + dest.latitude + "," + dest.longitude;
-        String sensor = "sensor=false";
-        String parameters = str_origin + "&" + str_dest + "&" + sensor;
-        String output = "json";
-        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters;
-
-        return url;
     }
 
     private String downloadUrl(String strUrl) throws IOException
@@ -143,110 +130,51 @@ public class PartyNotificationService extends Service {
     }
 
     // Fetches data from url passed
-    private class DownloadTask extends AsyncTask<String, Void, String>
+    private class GetTimeTask extends AsyncTask<LatLng, Void, Integer>
     {
         // Downloading data in non-ui thread
         @Override
-        protected String doInBackground(String... url)
+        protected Integer doInBackground(LatLng... pos)
         {
 
-            // For storing data from web service
-            String data = "";
+            int time_seconds = DistanceUtils.getTimeInSeconds(pos[0], pos[1]);
 
-            try
-            {
-                // Fetching the data from web service
-                data = downloadUrl(url[0]);
-            } catch (Exception e)
-            {
-                Log.d("Background Task", e.toString());
-            }
-            return data;
+            return time_seconds;
         }
 
         // Executes in UI thread, after the execution of
         // doInBackground()
         @Override
-        protected void onPostExecute(String result)
+        protected void onPostExecute(Integer time_seconds)
         {
-            super.onPostExecute(result);
-
-            ParserTask parserTask = new ParserTask();
-
-            // Invokes the thread for parsing the JSON data
-            parserTask.execute(result);
-
+            super.onPostExecute(time_seconds);
+            if((partyDateInMillis - System.currentTimeMillis() < (time_seconds+900)*1000)
+                    && partyDateInMillis - System.currentTimeMillis() >0){
+                Log.e("TEST", "party date millis:" + partyDateInMillis + " System.millis:" + System.currentTimeMillis()
+                        + ", timeseconds to millis:" + (time_seconds + 900) * 1000);
+                GetDurationTask durationTask = new GetDurationTask();
+                durationTask.execute(markerPoints.get(0), markerPoints.get(1));
+            }
         }
     }
 
     /** A class to parse the Google Places in JSON format */
-    private class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<String, String>>>>
+    private class GetDurationTask extends AsyncTask<LatLng, Integer, String>
     {
 
         // Parsing the data in non-ui thread
         @Override
-        protected List<List<HashMap<String, String>>> doInBackground(String... jsonData)
+        protected String doInBackground(LatLng... pos)
         {
-            JSONObject jObject;
-            List<List<HashMap<String, String>>> routes = null;
-
-            try
-            {
-                jObject = new JSONObject(jsonData[0]);
-                DirectionJsonParser parser = new DirectionJsonParser();
-
-                // Starts parsing data
-                routes = parser.parse(jObject);
-            } catch (Exception e)
-            {
-                e.printStackTrace();
-            }
-            return routes;
+            String duration = DistanceUtils.getTimeInString(pos[0], pos[1]);
+            return duration;
         }
 
         // Executes in UI thread, after the parsing process
         @Override
-        protected void onPostExecute(List<List<HashMap<String, String>>> result)
+        protected void onPostExecute(String duration)
         {
-            ArrayList<LatLng> points = null;
-            int time_seconds = Integer.MAX_VALUE;
-
-            // Traversing through all the routes
-            for (int i = 0; i < result.size(); i++)
-            {
-                points = new ArrayList<LatLng>();
-
-                List<HashMap<String, String>> path = result.get(i);
-
-                // Fetching all the points in i-th route
-                for (int j = 0; j < path.size(); j++)
-                {
-                    HashMap<String, String> point = path.get(j);
-
-                    if (j == 0)
-                    { // Get distance from the list
-                       // distance = point.get("distance");
-                        continue;
-                    } else if (j == 1)
-                    { // Get duration from the list
-                        duration = point.get("duration");
-                        time_seconds = Integer.parseInt(point.get("duration_seconds"));
-                        continue;
-                    }
-                    double lat = Double.parseDouble(point.get("lat"));
-                    double lng = Double.parseDouble(point.get("lng"));
-                    LatLng position = new LatLng(lat, lng);
-                    points.add(position);
-                }
-
-            }
-
-            if((partyDateInMillis - System.currentTimeMillis() < (time_seconds+900)*1000)
-                    && partyDateInMillis - System.currentTimeMillis() >0){
-                timeNotifier();
-                Log.e("TEST", "party date millis:" + partyDateInMillis + " System.millis:" + System.currentTimeMillis()
-                        + ", timeseconds to millis:" + (time_seconds + 900) * 1000);
-            }
+            timeNotifier(duration);
         }
     }
 
@@ -267,7 +195,7 @@ public class PartyNotificationService extends Service {
         return bestLocation;
     }
 
-    public void timeNotifier()
+    public void timeNotifier(String duration)
     {
 
         final NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);

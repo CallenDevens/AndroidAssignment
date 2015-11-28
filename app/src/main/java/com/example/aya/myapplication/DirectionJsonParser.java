@@ -4,6 +4,8 @@ package com.example.aya.myapplication;
  * Created by aya on 15-9-24.
  */
 
+import android.util.Log;
+
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,6 +43,7 @@ public class DirectionJsonParser
                     jDistance = ((JSONObject) jLegs.get(j)).getJSONObject("distance");
                     HashMap<String, String> hmDistance = new HashMap<String, String>();
                     hmDistance.put("distance", jDistance.getString("text"));
+                    hmDistance.put("distance_meters", jDistance.getString("value"));
 
                     jDuration = ((JSONObject) jLegs.get(j)).getJSONObject("duration");
                     HashMap<String, String> hmDuration = new HashMap<String, String>();
@@ -66,14 +69,14 @@ public class DirectionJsonParser
                 }
                 routes.add(path);
             }
-
+            return routes;
         } catch (JSONException e)
         {
             e.printStackTrace();
-        } catch (Exception e)
-        {
         }
-
+        catch (Exception e){
+            e.printStackTrace();
+        }
         return routes;
     }
 

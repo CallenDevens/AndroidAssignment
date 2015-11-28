@@ -10,7 +10,6 @@ import android.database.Cursor;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.AsyncTask;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.location.Location;
 import android.location.LocationManager;
@@ -245,7 +244,6 @@ public class PickupVenue extends AppCompatActivity {
     class ParserTask extends AsyncTask<String, Integer, List<HashMap<String,String>>>{
 
         JSONObject jObject;
-
         @Override
         protected List<HashMap<String,String>> doInBackground(String... jsonData) {
 
@@ -279,8 +277,6 @@ public class PickupVenue extends AppCompatActivity {
             partyMaker = mMap.addMarker(markerOptions);
             partyMaker.showInfoWindow();
             mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-
-
 
             mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                 @Override

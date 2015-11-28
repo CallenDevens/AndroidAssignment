@@ -13,6 +13,7 @@ public class ClubsDB {
     public static final String COLUMN_LATITUDE = "latitude";
     public static final String COLUMN_LONGITUDE = "longitude";
     private static final String LOG_TAG = "ClubsDB";
+    public static final String COLUMN_JOINED = "joined";
     public static final String SQLITE_TABLE_CLUBS = "clubs";
 
     private static final String DATABASE_CREATE =
@@ -22,6 +23,7 @@ public class ClubsDB {
                     COLUMN_LATITUDE  + " REAL, "+
                     COLUMN_LONGITUDE + " REAL, "+
                     COLUMN_RANGE     + " REAL," +
+                    COLUMN_JOINED    + " INTEGER DEFAULT 0, "+
                     "PRIMARY KEY("+ KEY_CLUB_NAME + "," + KEY_ADDRESS + ")"+
                     ");";
 
